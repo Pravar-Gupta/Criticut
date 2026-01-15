@@ -1,73 +1,69 @@
 # Criticut
-CritiCut — Critical Node Moderation with Edge Removal
+# **CritiCut — Critical Node Moderation with Edge Removal**
 
-CritiCut is an interactive network resilience and vulnerability analysis platform that identifies the most critical nodes and fragile connections in a graph, then intelligently removes risky edges to strengthen the network without breaking it.
+CritiCut is an interactive **network resilience and vulnerability analysis platform** that identifies the most critical nodes and fragile connections in a graph, then intelligently removes risky edges to strengthen the network without breaking it.
 
-It blends graph theory, linear algebra, and simulation to model how real-world systems behave under failure — from communication networks and cloud infrastructure to social and transportation networks.
+It blends **graph theory, linear algebra, and simulation** to model how real-world systems behave under failure — from communication networks and cloud infrastructure to social and transportation networks.
 
-🚀 What CritiCut Does
+---
+
+## 🚀 What CritiCut Does
 
 CritiCut takes a network and answers one powerful question:
 
-“If this network starts to fail, where will it break first — and how can we prevent it?”
+> *“If this network starts to fail, where will it break first — and how can we prevent it?”*
 
 The system:
 
-Computes information centrality using the graph Laplacian and its pseudo-inverse to measure how important each node is to overall connectivity.
+- Computes **information centrality** using the **graph Laplacian and its pseudo-inverse** to measure how important each node is to overall connectivity  
+- Identifies **critical nodes** whose instability would have the largest impact on the network  
+- Analyzes each connected edge using **effective resistance**, a metric from electrical network theory that reveals how fragile or redundant a connection is  
+- Removes the most vulnerable edges **only if the network remains connected**, reducing cascading-failure risk  
+- Visualizes the network before and after optimization  
+- Generates a detailed log of every edge removal  
 
-Identifies critical nodes — the ones whose instability would have the largest impact on the network.
+---
 
-Analyzes every edge connected to those nodes using effective resistance, a metric borrowed from electrical networks that reveals how fragile or redundant a connection is.
+## 🧠 Why This Is Powerful
 
-Removes the most vulnerable edges only when the network remains connected, reducing cascading-failure risk while preserving global connectivity.
-
-Visualizes the network before and after optimization and produces a complete audit log of every decision.
-
-🧠 Why This Is Powerful
-
-CritiCut doesn’t guess.
-It uses mathematical models of connectivity to understand how information, traffic, or power flows through a network — and where it is most likely to collapse.
+CritiCut does not guess.  
+It uses **mathematical models of connectivity** to understand how information, traffic, or power flows through a network — and where it is most likely to collapse.
 
 This makes it applicable to:
 
-Cloud and data-center reliability
+- Cloud and data-center reliability  
+- Cybersecurity and attack-surface analysis  
+- Power-grid and infrastructure modeling  
+- Social-network influence and stability  
 
-Cybersecurity and attack-surface analysis
+---
 
-Power-grid and infrastructure modeling
+## 🔥 Key Features
 
-Social-network influence and stability
+- Laplacian-based **information centrality** to detect high-impact nodes  
+- **Effective resistance** to rank fragile edges  
+- Safe edge removal that preserves global connectivity  
+- Real-time graph visualization (interactive and static)  
+- Support for uploaded datasets and synthetic networks  
+- Downloadable optimization logs for full transparency  
 
-🔥 Key Features
+---
 
-Laplacian-based information centrality to detect high-impact nodes
+## 🛠 Technology Stack
 
-Effective resistance to rank fragile edges
+- **Python** – core algorithms and simulation  
+- **NetworkX** – graph modeling and traversal  
+- **NumPy & SciPy** – Laplacian matrices and linear-algebra computations  
+- **Plotly & Matplotlib** – graph visualization  
+- **Streamlit** – interactive web interface  
 
-Safe edge-removal that preserves global connectivity
+---
 
-Real-time graph visualization (interactive & static)
+## 🎯 Why CritiCut Stands Out
 
-Support for uploaded datasets and synthetic networks
+Most graph projects simply **draw networks**.
 
-Downloadable optimization logs for full transparency
-
-🛠 Technology Stack
-
-Python – core algorithms and simulation
-
-NetworkX – graph modeling
-
-NumPy & SciPy – Laplacian matrices and linear algebra
-
-Plotly & Matplotlib – visual analytics
-
-Streamlit – interactive web interface
-
-🎯 Why CritiCut Stands Out
-
-Most graph projects just draw networks.
-
-CritiCut understands them.
+CritiCut **understands** them.
 
 It shows how failures propagate, which components matter most, and how to make a network more resilient — the same kind of analysis used in real-world infrastructure and reliability engineering.
+
